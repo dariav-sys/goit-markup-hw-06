@@ -788,9 +788,9 @@ textarea {
 .checkbox-label::before {
 	content: "";
 	display: inline-block;
-	background-image: url("../images/footer-icons/icon-check.svg");
 	border: 2px solid black;
-	fill: white;
+	border-radius: 2px;
+	/* fill: white; */
 	width: 15px;
 	height: 15px;
 	background-repeat: no-repeat;
@@ -799,9 +799,9 @@ textarea {
 	/* outline: 1px solid teal; */
 }
 
-.checkbox-label::before:checked {
+.checkbox:checked + .checkbox-label::before {
 	border: none;
-	fill: var(--accent-color);
+	background-image: url("../images/footer-icons/check-mark.svg");
 }
 
 .form-checkbox {
