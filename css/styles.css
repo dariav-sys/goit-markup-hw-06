@@ -785,9 +785,15 @@ textarea {
 	-webkit-appearance: none;
 }
 
+.checkbox-label {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .checkbox-label::before {
 	content: "";
-	display: inline-block;
+	display: inline-flex;
 	border: 2px solid black;
 	border-radius: 2px;
 	fill: white;
