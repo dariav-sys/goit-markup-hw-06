@@ -775,29 +775,37 @@ textarea {
 }
 
 .checkbox-area {
-	position: relative;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 }
 
 .checkbox {
-	/* appearance: none; */
-	position: absolute;
-	transform: translateY(-50%);
+	appearance: none;
+	-webkit-appearance: none;
 }
 
-.form-checkbox::before {
+.checkbox-label::before {
 	content: "";
 	display: inline-block;
-	background-image: url ("../images/footer-icons/checkbox.svg");
-	outline: 1px solid teal;
+	background-image: url("../images/footer-icons/icon-check.svg");
+	border: 2px solid black;
+	fill: white;
+	width: 15px;
+	height: 15px;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	/* outline: 1px solid teal; */
 }
 
-.form-checkbox::before:checked {
-	background-color: var(--accent-color);
+.checkbox-label::before:checked {
+	border: none;
+	fill: var(--accent-color);
 }
 
 .form-checkbox {
+	display: inline-block;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 1.45;
