@@ -869,7 +869,6 @@ textarea {
 
 .form-field-input:hover svg,
 .form-field-input:focus svg {
-	border-color: var(--accent-color);
 	fill: var(--accent-color);
 }
 
