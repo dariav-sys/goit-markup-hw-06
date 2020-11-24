@@ -801,7 +801,7 @@ textarea {
 
 .checkbox:checked + .checkbox-label::before {
 	border: none;
-	background-image: url("../images/footer-icons/check-mark.svg");
+	background-image: url("../images/footer-icons/icon-check.svg");
 }
 
 .form-checkbox {
