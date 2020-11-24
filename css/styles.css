@@ -790,7 +790,7 @@ textarea {
 	display: inline-block;
 	border: 2px solid black;
 	border-radius: 2px;
-	/* fill: white; */
+	fill: white;
 	width: 15px;
 	height: 15px;
 	background-repeat: no-repeat;
