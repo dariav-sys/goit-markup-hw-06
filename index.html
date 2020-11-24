@@ -18,28 +18,10 @@
 	</head>
 
 	<body>
-		<div class="backdrop is-hidden" >
-			<div class="modal">
-				<form>
-					<label for="name">Имя
-						<input type="text" name="name" >
-					</label>
-					
-					<label for="tel">Телефон
-						<input type="tel" name="tel" >
-					</label>
-					
-					<label for="mail">Почта
-						<input type="email" name="mail" >
-					</label>
-					
-					<label for="comment">Комментарий
-						<input type="text" name="comment" >
-					</label>	
-					<button type="submit" class="button primary">Отправить</button>		
-				</form>
-			</div>
-		</div>
+		
+		
+
+	
 
 
 		<header>
@@ -64,7 +46,7 @@
 					
 					<li class="item">
 						
-						<a href="mailto:info@devstudio.com" class="contact" 
+						<a href="info@devstudio.com" class="contact" data-form-open
 							><svg class="header-mail-icon" style="width:16;height:12">
 								<use href=./images/social-links/symbol-defs-header.svg#icon-envelope-hover></use>
 							</svg>info@devstudio.com</a
@@ -493,16 +475,15 @@
 				</div>
 				<div class="sign-up">
 					<p class="signup-text">Подпишитесь на рассылку</p>
-					<ul>
-						<label for="signup">						
-						</label>
-						<input type="text" name="name" id="signup">
+					
+					<div class="signup-area">	
+						<input class="signup-input" type="text" name="name" id="signup" placeholder="E-mail">
 						
-						<button type="button" class="button primary footer">
+						<button type="button" class="button primary footer" >
 							Подписаться
-
 						</button>
-					</ul>
+					</div>
+					
 				</div>
 			</div>
 		</footer>
@@ -510,9 +491,61 @@
 		
 		<!-- BACKDROP -->
 		<div class="backdrop is-hidden" data-modal>
-			<div class="modal">
+			<div class="modal">					
+						<h2 class="form-header-text">Оставьте свои данные, мы вам перезвоним</h2>
+						<form autocomplete="off">
+							<div class="form-field">
+								<label class="label" for="name">Имя</label>
+								<div class="form-field-input">
+									<input class="input" type="text" name="name" id="name">
+									<svg class="input-pic" width="18" height="18">
+										<use href="./images/footer-icons/symbol-defs.svg#icon-Vector-5"></use>
+									</svg>
+								</div>
+							</div>
+				
+							<div class="form-field">
+								<label class="label" for="tel">Телефон</label>
+								<div class="form-field-input">
+									<input class="input" type="tel" name="tel" id="tel">
+									<svg class="input-pic" width="18" height="18">
+										<use href="./images/footer-icons/symbol-defs.svg#icon-Vector-6"></use>
+									</svg>
+								</div>
+							</div>
+				
+							<div class="form-field">
+								<label class="label" for="mail">Почта</label>
+								<div class="form-field-input">
+									<input class="input" type="email" name="mail" id="mail">
+									<svg class="input-pic" width="18" height="18">
+										<use href="./images/footer-icons/symbol-defs.svg#icon-Vector-7"></use>
+									</svg>
+								</div>
+							</div>
+				
+							<div>
+								<label class="label" for="comment">Комментарий</label> <br>
+								<textarea class="comment" name="comment" id="comment" rows=""></textarea>
+							</div>
+				
+				
+							<div class="checkbox-area">
+								<label class="checkbox-label"><input class="checkbox" type="checkbox" name="checkbox">
+								</label>
+								
+								<p class="form-checkbox">Соглашаюсь с рассылкой и принимаю <span class="checkbox-conditions"><a href="">Условия
+											договора</a></span></p>
+							</div>
+							<button type="submit" class="button primary form">Отправить</button>
+						</form>
+					
+				
 				<button type="button" class="modal-close-btn" data-modal-close><svg width="11" height="11"><use href="./images/social-links/symbol-defs.svg#icon-Vector-3" ></use></svg></button>
 			</div>
+		</div>
+
+		
 		</div>
 		
 		<script src="./js/modal.js"></script>
