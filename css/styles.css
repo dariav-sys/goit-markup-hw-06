@@ -859,11 +859,18 @@ textarea {
 	margin: 0;
 	padding-left: 42px;
 	outline: none;
+	transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input:hover,
 .input:focus {
-	border: 1px solid var(--accent-color);
+	border-color: var(--accent-color);
+}
+
+.form-field-input:hover svg,
+.form-field-input:focus svg {
+	border-color: var(--accent-color);
+	fill: var(--accent-color);
 }
 
 .input-pic {
@@ -877,6 +884,7 @@ textarea {
 	margin: 0;
 	padding: 0;
 	transform: translateY(-50%);
+	transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .comment {
