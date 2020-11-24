@@ -798,11 +798,11 @@ textarea {
 
 .checkbox-label::before {
 	content: "";
-	display: inline-flex;
+	/* display: inline-flex; */
 	border: 2px solid black;
 	border-radius: 2px;
 	fill: white;
-	width: 15px;
+	width: 16px;
 	height: 15px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -812,8 +812,9 @@ textarea {
 }
 
 .checkbox:checked + .checkbox-label::before {
-	border: none;
+	border-color: var(--accent-color);
 	background-image: url("../images/footer-icons/icon-check.svg");
+	background-origin: border-box;
 }
 
 .form-checkbox {
